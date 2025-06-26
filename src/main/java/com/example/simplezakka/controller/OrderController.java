@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
-@CrossOrigin(origins = "*")    // 06/26追加
+//@CrossOrigin(origins = "*")    // 06/26追加
 @RestController
 @RequestMapping("/api/orders")
 public class OrderController {

@@ -64,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             `;
+console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記            
             container.appendChild(card);
             
             // 詳細ボタンのイベント設定
