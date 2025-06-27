@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitOrder();
     });
     
-    // 商品一覧を取得して表示する関数
+    // １．商品一覧を取得して表示する関数
     async function fetchProducts() {
         try {
             const response = await fetch(`${API_BASE}/products`);
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    // 商品一覧を表示する関数
+    // ２．商品一覧を表示する関数
     function displayProducts(products) {
         const container = document.getElementById('products-container');
         container.innerHTML = '';
@@ -74,7 +74,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         });
     }
     
-    // 商品詳細を取得する関数
+    // ３．商品詳細を取得する関数
     async function fetchProductDetail(productId) {
         try {
             const response = await fetch(`${API_BASE}/products/${productId}`);
@@ -89,7 +89,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // 商品詳細を表示する関数
+    // ４．商品詳細を表示する関数
     function displayProductDetail(product) {
         document.getElementById('productModalTitle').textContent = product.name;
         
@@ -121,7 +121,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         productModal.show();
     }
     
-    // カートに商品を追加する関数
+    // ５．カートに商品を追加する関数
     async function addToCart(productId, quantity) {
         try {
             const response = await fetch(`${API_BASE}/cart`, {
@@ -150,7 +150,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // カート情報を取得する関数
+    // ６．カート情報を取得する関数
     async function updateCartDisplay() {
         try {
             const response = await fetch(`${API_BASE}/cart`);
@@ -164,12 +164,12 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // カートバッジを更新する関数
+    // ７．カートバッジを更新する関数
     function updateCartBadge(count) {
         document.getElementById('cart-count').textContent = count;
     }
     
-    // カートモーダルの内容を更新する関数
+    // ８．カートモーダルの内容を更新する関数
     async function updateCartModalContent() {
         try {
             const response = await fetch(`${API_BASE}/cart`);
@@ -184,7 +184,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // カート内容を表示する関数
+    //９．カート内容を表示する関数
     function displayCart(cart) {
         const modalBody = document.getElementById('cartModalBody');
         
@@ -256,7 +256,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // カート内の商品数量を更新する関数
+    // １０．カート内の商品数量を更新する関数
     async function updateItemQuantity(itemId, quantity) {
         try {
             const response = await fetch(`${API_BASE}/cart/items/${itemId}`, {
@@ -283,7 +283,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // カート内の商品を削除する関数
+    // １１．カート内の商品を削除する関数
     async function removeItem(itemId) {
         try {
             const response = await fetch(`${API_BASE}/cart/items/${itemId}`, {
@@ -303,7 +303,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // 注文を確定する関数
+    // １２．注文を確定する関数
     async function submitOrder() {
         const form = document.getElementById('order-form');
         
@@ -353,7 +353,7 @@ console.log('imageUrl:', product.imageUrl); //6/26デバッグ用に追記
         }
     }
     
-    // 注文完了画面を表示する関数
+    // １３．注文完了画面を表示する関数
     function displayOrderComplete(order) {
         document.getElementById('orderCompleteBody').innerHTML = `
             <p>ご注文ありがとうございます。注文番号は <strong>${order.orderId}</strong> です。</p>
