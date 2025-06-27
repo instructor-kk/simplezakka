@@ -1,5 +1,6 @@
 //feature/testにコミット
 //次はmainにコミット
+//リーダー側からコミット
 
 document.addEventListener('DOMContentLoaded', function() {
     // モーダル要素の取得
