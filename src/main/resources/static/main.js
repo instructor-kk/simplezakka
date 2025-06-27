@@ -1,3 +1,5 @@
+//feature/testにコミット
+
 document.addEventListener('DOMContentLoaded', function() {
     // モーダル要素の取得
     const productModal = new bootstrap.Modal(document.getElementById('productModal'));
