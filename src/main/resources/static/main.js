@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const orderCompleteModal = new bootstrap.Modal(document.getElementById('orderCompleteModal'));
     
     // APIのベースURL
-    const API_BASE = 'http://localhost:8080/api';
+//    const API_BASE = 'http://localhost:8080/api';
+    const API_BASE = '/api';
     
     // 商品一覧の取得と表示
     fetchProducts();
