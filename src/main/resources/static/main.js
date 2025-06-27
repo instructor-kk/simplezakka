@@ -1,4 +1,5 @@
 //feature/testにコミット
+//次はmainにコミット
 
 document.addEventListener('DOMContentLoaded', function() {
     // モーダル要素の取得
