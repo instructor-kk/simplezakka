@@ -8,3 +8,5 @@
 0702 from develop/main こんにちは
 
 0702 from sub(のつもり)
+
+Github上から直接編集byKeiKu
