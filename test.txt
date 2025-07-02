@@ -13,4 +13,7 @@ Github上から直接編集byKeiKu
 
 サインオフしてからの編集、どうなる？とうとうコンフリクト！
 
-username変更しました
+username変更しました（subPC）
+
+こちらも変更しました（desktop）
+
