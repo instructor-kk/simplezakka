@@ -6,3 +6,5 @@
 見れました！
 
 0702 from develop/main こんにちは
+
+0702 from sub(のつもり)
