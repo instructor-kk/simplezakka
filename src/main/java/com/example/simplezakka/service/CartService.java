@@ -38,6 +38,8 @@ public class CartService {
             Product product = productOpt.get();
             Cart cart = getCartFromSession(session);
             
+            //この時点ではproductIdのみセットして、ただのidはnull？
+            //ただのidはいつ使う？
             CartItem item = new CartItem();
             item.setProductId(product.getProductId());
             item.setName(product.getName());
