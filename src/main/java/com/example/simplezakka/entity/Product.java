@@ -47,3 +47,7 @@ public class Product {
         updatedAt = LocalDateTime.now();
     }
 }
+
+
+
+
